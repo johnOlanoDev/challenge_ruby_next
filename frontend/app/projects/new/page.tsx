@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 
-export default function CreateProjectPage() {
+const CreateProjectPage = () => {
   const {
     register,
     handleSubmit,
@@ -75,4 +75,6 @@ export default function CreateProjectPage() {
       </Button>
     </Box>
   );
-}
+};
+
+export default CreateProjectPage;

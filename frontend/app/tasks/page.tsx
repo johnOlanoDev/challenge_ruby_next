@@ -28,7 +28,7 @@ interface Task {
   created_at: string;
 }
 
-export default function TasksPage() {
+const TasksPage = () => {
   const [tasks, setTasks] = useState<Task[]>([]);
   const [loading, setLoading] = useState(true);
   const [statusFilter, setStatusFilter] = useState<string>("all");
@@ -156,4 +156,6 @@ export default function TasksPage() {
       </Table>
     </Box>
   );
-}
+};
+
+export default TasksPage;
